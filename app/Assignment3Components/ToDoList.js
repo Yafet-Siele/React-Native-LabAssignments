@@ -7,8 +7,8 @@ function ToDoList({ tasks }) {
     
     return (
     <main>
-        {tasks.map((task) => (
-            <p>{task} incomplete </p>
+        {tasks.map((task, index) => (
+            <p key={index}>{task} incomplete </p>
         ))}</main>
     );
 }
